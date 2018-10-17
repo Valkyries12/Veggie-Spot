@@ -13,6 +13,10 @@ body {
     background-color: #f4f4f4;
 }
 
+.blanco {
+    height: 26px;
+    display: none;
+}
 /*********************************************************/
 /*******************BLOQUE*******************************/
 /********************************************************/
@@ -260,7 +264,6 @@ a.btn--transparent:hover {
     align-items: center;
     display: flex;
     flex-direction: column;
-    height: 100vh;
     width: 100%;
 }
 
@@ -335,7 +338,6 @@ a.btn--transparent:hover {
 
 .section--how-it-works {
     width: 100%;
-    height: 100vh;
     background-color: #f4f4f4;
 }
 
@@ -606,16 +608,13 @@ a.a--city-social:hover {
     background-color: #fff;
     display: flex;
     flex-direction: column;
-    height: 100vh;
     justify-content: space-around;
     width: 100%;
-    
 }
 
 .div--contenedor-form {
     display: flex;
     flex-direction: column;
-    height: 100%;
     width: 100%;
 }
 
@@ -624,7 +623,6 @@ a.a--city-social:hover {
 .form {
     display: flex;
     flex-direction: column;
-    height: 90%;
     justify-content: space-around;
     margin: 0 auto;
     width: 50%;
@@ -644,6 +642,7 @@ a.a--city-social:hover {
     align-items: center;
     display: flex;
     flex-direction: row;
+    margin-bottom: 1.3rem;
 }
 
 .div--label {
@@ -671,7 +670,7 @@ a.a--city-social:hover {
 .btn--form {
     color: #fff;
     font-size: 1.125rem;
-    margin: 0 auto;
+    margin: 1.5rem auto;
     text-transform: capitalize;
     width: 20%;
 }
@@ -759,9 +758,108 @@ a.li__a--social {
 
 @media only screen and (max-width: 769px){
     html {
-        font-size: 13px;
+        font-size: 12.5px;
     }
 
+    .h2 {
+        font-size: 2.56rem;
+    }
+
+    .h3 {
+        font-size: 1.48rem;
+    }
+
+    .p {
+        font-size: 1.25rem;
+        font-weight: none;
+    }
+
+    .icono {
+        font-size: 5.2rem;
+    }
+    /*HEADER
+    *****************************************/
+    .nav__div-logo {
+        width: 18%;
+    }
     
+    .nav__ul {
+        width: 60%;
+    }
+
+    .h1 {
+        margin-left: 6%;
+    }
+
+    .contenedor--btn {
+        margin-left: 6%;
+    }
+
+    /*SECTION--GET-FOOD
+    *****************************************/
+    .div--h2-get-food {
+        width: 70%;  
+    }
+
+    .div__features {
+        width: 30%;
+    }
+
+    .blanco {
+        display: block;
+    }
+
+    /*SECTION--HOW-IT-WORKS
+    *****************************************/
+    .div--phone {
+        width: 60%;
+    }
+
+    .div--number {
+        width: 50px;
+        height: 50px;
+    }
+
+    .div--apps {
+        width: 50%;
+    }
+    /*SECTION--PRICES
+    ***********************************************/
+    .div--price {
+        width: 32%;
+    }
+
+    .p--price-meal {
+        font-size: 1.1rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .btn--signup {
+        width: 80%;
+        height: 50px;
+        margin-top: 1.5rem;
+    }
+
+    /*SECTION--FORMULARIO
+    *************************************************/
+    .form {
+        width: 70%;
+    }
+    
+    .label--form {
+        font-size: 1.3rem;
+    }
+
+    /*FOOTER
+    **************************************************/
+
+    .div--social-uno {
+        width: 50%;
+        margin-left: 10px;
+    }
+
+    .div--social-dos {
+        margin-left: 200px;
+    }
 }
 
