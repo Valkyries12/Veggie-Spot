@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+html {
+    font-size: 16px;
+}
+
 body {
     background-color: #f4f4f4;
 }
@@ -30,7 +34,6 @@ body {
     justify-content: space-between;
     margin-top: 15px;
     width: 100%;
-    
 }
 
 li {
@@ -60,7 +63,7 @@ a:hover {
 
 .h1 {
     color: #fff;
-    font-size: 48px;
+    font-size: 3.5rem;
     font-weight: 300;
     letter-spacing: 1.5px;
     margin-left: 90px;
@@ -70,7 +73,7 @@ a:hover {
 
 .h2 {
     color: #555;
-    font-size: 36px;
+    font-size: 2.25rem;
     font-weight: 350;
     letter-spacing: 1px;
     margin-top: 80px;
@@ -80,7 +83,7 @@ a:hover {
 
 .h3 {
     color: #555;
-    font-size: 21px;
+    font-size: 1.3125rem;
     font-weight: 400;
     letter-spacing: 1px;
     margin-bottom: 16px;
@@ -90,6 +93,7 @@ a:hover {
 .btn {
     background-color: #e67e22;
     border-radius: 30px;
+    font-size: 1rem;
     font-weight: 300;
     letter-spacing: 1px;
     margin-right: 20px;
@@ -112,14 +116,14 @@ a:hover {
 
 .p {
     color: #555;
-    font-size: 17px;
+    font-size: 1.0625rem;
     letter-spacing: .5px;
     line-height: 1.3;
 }  
 
 .icono {
-    color: #e67e22;
-    font-size: 64px;
+    color: #cc6c18;
+    font-size: 4rem;
     font-weight: 200;
     margin-bottom: 10px;
 }
@@ -127,7 +131,7 @@ a:hover {
 .blockquote {
     line-height: 1.5;
     color: white;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 300;
     font-style: italic;
 }
@@ -157,7 +161,7 @@ a:hover {
 }
 
 .option {
-    font-size: 18px;
+    font-size: 1.125rem;
     color: #555;
 }
 
@@ -169,7 +173,7 @@ a:hover {
     border-radius: 3px;
     border: 1px solid #888;
     color: #555;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 300;
     height: 38px;
     outline: none;
@@ -193,7 +197,8 @@ a:hover {
 .nav__div-logo{
     display: flex;
     justify-content: center;
-    width: 25%;
+    width: 12%;
+    margin-left: 6%;
 }
 
 .nav__ul {
@@ -206,6 +211,13 @@ a:hover {
     text-transform: uppercase;
     width: 50%;
 }
+
+.nav__ul--a {
+    font-size: 1.125rem;
+    transition: 0.5 ease;
+}
+
+
 
 .header__text {
     display: flex;
@@ -231,6 +243,8 @@ a:hover {
     margin-left: 90px;
     margin-top: 30px;
 }
+
+
 
 a.btn--transparent {
     border: 1px solid #e67e22;
@@ -287,6 +301,10 @@ a.btn--transparent:hover {
     width: 25%;
     overflow: hidden;
     
+}
+
+.img--logo {
+    width: 100%;
 }
 
 .img--food {
@@ -369,7 +387,7 @@ a.btn--transparent:hover {
     color: #e67e22;
     display: flex;
     flex-direction: column;
-    font-size: 30px;
+    font-size: 1.875rem;
     height: 60px;
     justify-content: center;
     margin-right: 30px;
@@ -440,7 +458,7 @@ a.btn--transparent:hover {
 
 .icono--city {
     color: #e67e22;
-    font-size: 22px;
+    font-size: 1.375rem;
     margin-right: 10px;
 }
 
@@ -548,7 +566,7 @@ a.a--city-social:hover {
 }
 
 .span--price {
-    font-size: 60px;
+    font-size: 3.75rem;
     font-weight: 200; 
 }
 
@@ -566,7 +584,7 @@ a.a--city-social:hover {
     align-self: center;
     color: #fff;
     display: flex;
-    font-size: 20px;
+    font-size: 1.25rem;
     height: 60px;
     text-transform: initial;
     width: 60%;
@@ -614,7 +632,7 @@ a.a--city-social:hover {
 
 .label--form {
     color: #444;
-    font-size: 19px;
+    font-size: 1.1875rem;
     font-weight: 300;
     letter-spacing: .5px;
     line-height: 1.3;
@@ -646,13 +664,13 @@ a.a--city-social:hover {
 *::placeholder,
 .span--checkbox {
     color: #555;
-    font-size: 17px;
+    font-size: 1.0625rem;
     font-weight: 300;
 }
 
 .btn--form {
     color: #fff;
-    font-size: 18px;
+    font-size: 1.125rem;
     margin: 0 auto;
     text-transform: capitalize;
     width: 20%;
@@ -695,7 +713,7 @@ a.li__a--footer {
     -webkit-transition: .2s;
     border: none;
     color: #afafaf;
-    font-size: 14px;
+    font-size: 0,875rem;
     font-weight: 300;
     text-transform: capitalize;
     transition: .2s;
@@ -712,8 +730,12 @@ a.li__a--footer:hover {
 }
 
 a.li__a--social {
-    font-size: 25px;
+    font-size: 1.5625rem;
     border: none;
+}
+
+.footer--social {
+    font-size: 1.5625rem;
 }
 
 .div--copy {
@@ -726,11 +748,20 @@ a.li__a--social {
 
 .p--copyright {
     color: #afafaf;
-    font-size: 15px;
+    font-size: 0.9375rem;
     font-weight: 300;
 }
 
 
+/*****************************************************/
+/**********************RESPONSIVE*********************/
+/*****************************************************/
 
+@media only screen and (max-width: 769px){
+    html {
+        font-size: 13px;
+    }
 
+    
+}
 
