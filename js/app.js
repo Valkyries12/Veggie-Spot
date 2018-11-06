@@ -50,3 +50,11 @@ function stickyNav() {
 }
 
 window.addEventListener("scroll", stickyNav);
+
+//menu
+var menuHamburguesa = document.querySelector(".menu-icon");
+var menu = document.querySelector(".nav__ul");
+
+menuHamburguesa.addEventListener("click", function(){
+  menu.classList.toggle("visible");
+});

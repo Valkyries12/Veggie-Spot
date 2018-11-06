@@ -14,9 +14,20 @@ body {
 }
 
 .blanco {
-    height: 26px;
+    height: 36px;
     display: none;
 }
+
+.menu-icon {
+    color: #fff;
+    font-size: 3rem;
+    cursor: pointer;
+    margin-left: 87%;
+    position: absolute;
+
+}
+
+
 /*********************************************************/
 /*******************BLOQUE*******************************/
 /********************************************************/
@@ -38,6 +49,7 @@ body {
     justify-content: space-between;
     margin-top: 15px;
     width: 100%;
+    z-index: 100;
 }
 
 li {
@@ -226,7 +238,9 @@ a:hover {
 .header__text {
     display: flex;
     flex-direction: column;
-    height: 100%;
+    position: absolute;
+    margin-top: 15%;
+    width: 100%;
 }
 
 .div__features {
@@ -419,7 +433,6 @@ a.btn--transparent:hover {
 
 .section--location {
     background-color: #fff;
-    height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -431,6 +444,7 @@ a.btn--transparent:hover {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    margin-bottom: 5%;
 }
 
 .div--city {
@@ -480,7 +494,6 @@ a.a--city-social:hover {
     background-position: center bottom;
     background-size: cover;
     flex-direction: column;
-    height: 100vh;
     width: 100%;
     
 }
@@ -488,7 +501,6 @@ a.a--city-social:hover {
 .div--darken {
     background-color: rgba(0, 0, 0, .7);
     border: 1px solid transparent;
-    height: 100vh;
     width: 100%;
 }
 
@@ -501,6 +513,7 @@ a.a--city-social:hover {
     flex-direction: row;
     height: 50%;
     justify-content: space-around;
+    margin-bottom: 5%;
     width: 100%;
 }
 
@@ -541,16 +554,15 @@ a.a--city-social:hover {
 .section--prices {
     background-color: #f4f4f4;
     width: 100%;
-    height: 100vh;
 }
 
 .div--contenedor-prices {
     align-items: space-around;
     display: flex;
     flex-direction: row;
-    height: 100%;
     justify-content: space-around;
     width: 100%;
+    height: 100%;
 }
 
 .div--price {
@@ -563,14 +575,23 @@ a.a--city-social:hover {
     width: 23%;
 }
 
+.div--price-desc {
+    margin-bottom: 5%;
+}
+
 .p--price {
     color: #e67e22;
+}
+
+.p--price-meal {
+    margin-bottom: 6%;
 }
 
 .span--price {
     font-size: 3.75rem;
     font-weight: 200; 
 }
+
 
 .div--price-desc {
     display: flex;
@@ -860,6 +881,238 @@ a.li__a--social {
 
     .div--social-dos {
         margin-left: 200px;
+    }
+}
+
+
+
+
+@media only screen and (min-width: 481px) and (max-width: 768px){
+    html {
+        font-size: 12.5px;
+    }
+
+    .h2 {
+        font-size: 2rem;
+    }
+
+    .h3 {
+        font-size: 1.48rem;
+    }
+
+    .p {
+        font-size: 1.18rem;
+        font-weight: 200;
+        line-height: 1.5;
+    }
+
+    .icono {
+        font-size: 5.2rem;
+    }
+    /*HEADER
+    *****************************************/
+    .nav__div-logo {
+        width: 28%;
+        position: absolute;
+    }
+
+    
+    .nav__ul {
+        width: 50%;
+        flex-direction: column;
+        margin-left: 35%;
+        display: none;
+        z-index: 100;
+    }
+
+    .visible {
+        display: block;
+    }
+
+
+    .nav__ul--a {
+        font-size: 1.2rem;
+    }
+
+    .nav__ul li {
+        margin-bottom: 20px;
+    }
+
+    .h1 {
+        margin-left: 6%;
+        font-size: 2.4rem;
+    }
+
+
+    /*SECTION--GET-FOOD
+    *****************************************/
+    .div--h2-get-food {
+        width: 90%;
+    }
+
+    .div--get-food-features {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .div__features {
+        width: 100%;
+    }
+
+    .icono {
+        font-size: 4.8rem;
+    }
+
+    .blanco {
+        display: none;
+    }
+
+    /*SECTION--HOW-IT-WORKS
+    *****************************************/
+
+    .contenedor--how-it-works {
+        flex-direction: column;
+        align-items: center;
+    }
+    .div--phone {
+        width: 90%;
+    }
+
+    .div--steps {
+        width: 90%;
+    }
+
+    .steps--number-1 {
+        padding: 0.8rem;
+    }
+
+    .div--number {
+        width: 3.2rem;
+        height: 3.2rem;
+        font-size: 1.6rem;
+    }
+
+    .div--apps {
+        width: 40%;
+    }
+    /*SECTION--LOCATION
+    ***********************************************/
+    .div--contenedor-location {
+        flex-direction: column;
+        width: 90%;
+        margin-bottom: 10%;
+    }
+
+    .div--city {
+        width: 100%;
+        margin-bottom: 8%;
+    }
+
+    .div--contenedor-img {
+        height: 60%;
+    }
+
+    .div--city-desc {
+        margin-bottom: 0;
+    }
+
+    /*SECTION--TESTIMONIALS
+    *************************************************/
+    .h2--testimonial {
+        width: 90%;
+    }
+
+    .div--contenedor-testimonials {
+        width: 90%;
+        margin: 0 auto;
+        flex-direction: column;
+        margin-bottom: 10%;
+    }
+
+    .div--testimonial {
+        padding: 1%;
+        width: 100%;
+    }
+
+    .blockquote {
+        margin-bottom: 6%;
+    }
+
+    .img--testimonial {
+        height: 40px;
+        width: 40px;
+    }
+
+    .quote {
+        font-size: 2rem;
+    }
+
+    /*SECTION--PRICES
+    *************************************************/
+    .div--contenedor-prices {
+        width: 90%;
+        margin: 0 auto;
+        flex-direction: column;
+        
+    }
+
+    .p--price-meal {
+        border-bottom: .5px solid rgb(231, 225, 225);
+        padding: 5px;
+    }
+
+    .div--price {
+        width: 100%;
+    }
+
+    .div--price-desc {
+        margin-bottom: 3%;
+    }
+
+    .btn--signup {
+        width: 40%;
+    }
+
+    /*SECTION--FORMULARIO
+    *************************************************/
+    .section--formulario {
+        margin-bottom: 5%;
+    }
+
+    .div--input {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .div--label {
+        margin-bottom: 4%;
+        width: 100%;
+    }
+
+    .div--comentario {
+        flex-direction: column;
+    }
+
+    .btn--form {
+        width: 40%;
+    }
+
+    /*FOOTER
+    *************************************************/
+    .contenedor--footer-social {
+        width: 90%;
+        flex-direction: column;
+        margin: 0 auto;
+        align-items: space-around;
+    }
+
+    .div--social-uno {
+        width: 100%;
+    }
+
+    .div--social-dos {
+        width: 50%;
+        margin: 0 auto;
     }
 }
 
