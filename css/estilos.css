@@ -885,9 +885,11 @@ a.li__a--social {
 }
 
 
+/***************************************************************************/
+/********** 481 X 768****************/
+/***************************************************************************/
 
-
-@media only screen and (min-width: 481px) and (max-width: 768px){
+@media only screen and (min-width: 360px) and (max-width: 768px){
     html {
         font-size: 12.5px;
     }
@@ -904,6 +906,10 @@ a.li__a--social {
         font-size: 1.18rem;
         font-weight: 200;
         line-height: 1.5;
+    }
+
+    .header {
+        height: 100vh;
     }
 
     .icono {
@@ -992,9 +998,7 @@ a.li__a--social {
         font-size: 1.6rem;
     }
 
-    .div--apps {
-        width: 40%;
-    }
+    
     /*SECTION--LOCATION
     ***********************************************/
     .div--contenedor-location {
@@ -1070,7 +1074,7 @@ a.li__a--social {
     }
 
     .btn--signup {
-        width: 40%;
+        width: 50%;
     }
 
     /*SECTION--FORMULARIO
@@ -1114,5 +1118,13 @@ a.li__a--social {
         width: 50%;
         margin: 0 auto;
     }
+
+    /************************************************************************************/
+    /**********************MOVIL 480***************/
+    /************************************************************************************/
+    @media only screen and (max-width: 480px){
+
+    }
+    
 }
 
