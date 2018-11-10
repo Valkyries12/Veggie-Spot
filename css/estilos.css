@@ -24,7 +24,8 @@ body {
     cursor: pointer;
     margin-left: 87%;
     position: absolute;
-
+    display: none;
+    z-index: 150;
 }
 
 
@@ -246,8 +247,8 @@ a:hover {
 .header__text {
     display: flex;
     flex-direction: column;
+    margin-top: 10%;
     position: absolute;
-    margin-top: 15%;
     width: 100%;
 }
 
@@ -916,6 +917,10 @@ a.li__a--social {
         line-height: 1.5;
     }
 
+    .menu-icon {
+        display: block;
+    }
+
     .header {
         height: 100vh;
     }
@@ -925,16 +930,17 @@ a.li__a--social {
     }
     /*HEADER
     *****************************************/
+    
     .nav__div-logo {
         width: 28%;
-        position: absolute;
+        height: 70px;
     }
 
     
     .nav__ul {
         width: 50%;
         flex-direction: column;
-        margin-left: 35%;
+        margin:0 auto;
         display: none;
         z-index: 100;
     }

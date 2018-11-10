@@ -25,7 +25,13 @@ $(document).ready(function(){
     });
   });
 
+//menu
+var menuHamburguesa = document.querySelector(".menu-icon");
+var menu = document.querySelector(".nav__ul");
 
+menuHamburguesa.addEventListener("click", function(){
+  menu.classList.toggle("visible");
+});
 
 
 
@@ -37,12 +43,14 @@ function stickyNav() {
   //cuando supera los 300px el eje vertical le cambia el color a todos los a y le agrega la clase .sticky, de lo contrario vuelve a la normalidad
   if(yPos > 300) {
     nav.classList.add("sticky");
+    menuHamburguesa.style.color = "#555";
     for(i = 0; i < nav__a.length;i++){
       nav__a[i].style.color="#555";
     }
     
   } else {
     nav.classList.remove("sticky");
+    menuHamburguesa.style.color = "white";
     for(i = 0; i < nav__a.length;i++){
       nav__a[i].style.color="#fff";
     }
@@ -51,10 +59,3 @@ function stickyNav() {
 
 window.addEventListener("scroll", stickyNav);
 
-//menu
-var menuHamburguesa = document.querySelector(".menu-icon");
-var menu = document.querySelector(".nav__ul");
-
-menuHamburguesa.addEventListener("click", function(){
-  menu.classList.toggle("visible");
-});
